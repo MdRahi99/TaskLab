@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="text-slate-800 bg-slate-200 body-font">
+      <header className="text-slate-800 bg-slate-200 body-font lg:mt-12">
         <div className="mx-auto flex flex-wrap gap-3 p-3 flex-col md:flex-row items-center">
           <Link
             to="/"
@@ -90,9 +90,9 @@ const Header = () => {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-4 h-4 ml-1"
                       viewBox="0 0 24 24"
                     >
