@@ -7,7 +7,7 @@ const CompletedTaskDetails = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/completedTasks/taskCompleted`
+      `https://tasklab-server.vercel.app/completedTasks/taskCompleted`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -20,7 +20,7 @@ const CompletedTaskDetails = () => {
     console.log(task);
 
     fetch(
-      `http://localhost:5000/completedTasks/${task._id}`,
+      `https://tasklab-server.vercel.app/completedTasks/${task._id}`,
       {
         method: "DELETE",
       }

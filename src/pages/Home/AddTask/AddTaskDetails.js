@@ -22,7 +22,7 @@ const AddTaskDetails = () => {
       img,
       description,
     };
-    fetch("http://localhost:5000/addTask", {
+    fetch("https://tasklab-server.vercel.app/addTask", {
       method: "POST",
       headers: {
         "content-type": "application/json",
