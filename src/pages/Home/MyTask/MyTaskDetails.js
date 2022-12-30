@@ -9,7 +9,7 @@ const MyTaskDetails = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/dailyTasks/${user?.email}`
+      `http://localhost:5000/allTasks/${user?.email}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -19,7 +19,7 @@ const MyTaskDetails = () => {
   }, [user?.email]);
 
   const handleCompleted = (id) => {
-    fetch(`http://localhost:5000/dailyTasks/${id}`, {
+    fetch(`http://localhost:5000/completedTasks/${id}`, {
       method: "PUT",
     })
       .then((res) => res.json())

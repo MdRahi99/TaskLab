@@ -7,7 +7,7 @@ const CompletedTaskDetails = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/daily/taskCompleted`
+      `http://localhost:5000/completedTasks/taskCompleted`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -20,7 +20,7 @@ const CompletedTaskDetails = () => {
     console.log(task);
 
     fetch(
-      `http://localhost:5000/dailyTasks/${task._id}`,
+      `http://localhost:5000/completedTasks/${task._id}`,
       {
         method: "DELETE",
       }
